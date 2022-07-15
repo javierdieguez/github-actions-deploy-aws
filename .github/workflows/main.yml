@@ -99,11 +99,11 @@ jobs:
 #            S3OutputPath=${{ secrets.OUTPUT_PATH }} \
 #            DirectIntegrationSecret=${{ secrets.DIRECT_INTEGRATION_SECRET }} \
 #            DirectIntegrationUrl=${{ secrets.DIRECT_INTEGRATION_URL }} \
-  remove-artifacts:
-    needs: deploy-apps
-    runs-on: ubuntu-latest
-    steps:
-      - name: Remove old artifacts
-        uses: c-hive/gha-remove-artifacts@v1
-        with:
-          age: '5 seconds'
+#  remove-artifacts:
+#    needs: deploy-apps
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: Remove old artifacts
+#        uses: c-hive/gha-remove-artifacts@v1
+#        with:
+#          age: '5 seconds'
